@@ -3,7 +3,7 @@
 import { Footer } from '@/components/web/footer';
 import { useQuery } from 'convex/react';
 import { api } from '@/convex/_generated/api';
-import { BlogCard } from '@/components/web/blogCard';
+import { BlogCard } from '@/components/web/blog-card';
 import { Wrapper } from '@/components/providers/wrapper';
 
 export default function Page() {

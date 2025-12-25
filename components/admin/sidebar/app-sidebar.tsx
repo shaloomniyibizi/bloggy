@@ -79,11 +79,7 @@ export function DashboardSidebar() {
 			>
 				<a href='#' className='flex items-center gap-2'>
 					<LogoIcon className='h-8 w-8' />
-					{!isCollapsed && (
-						<span className='font-semibold text-black dark:text-white'>
-							Bloggy
-						</span>
-					)}
+					{!isCollapsed && <span className='font-semibold'>Bloggy</span>}
 				</a>
 
 				<motion.div

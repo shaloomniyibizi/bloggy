@@ -8,10 +8,9 @@ export default defineSchema({
 		description: v.string(),
 		date: v.string(),
 		userName: v.string(),
-		link: v.string(),
 		category: v.string(),
-		readTime: v.string(),
-		views: v.string(),
+		readTime: v.optional(v.string()),
+		views: v.optional(v.string()),
 		status: v.union(
 			v.literal('Published'),
 			v.literal('Draft'),

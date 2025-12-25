@@ -4,7 +4,8 @@ import {
 	InputGroupButton,
 	InputGroupInput,
 } from '@/components/ui/input-group';
-import { Button } from '../ui/button';
+import { Button, buttonVariants } from '../ui/button';
+import Link from 'next/link';
 
 export const Header = () => {
 	return (
@@ -27,13 +28,18 @@ export const Header = () => {
 					variant='ghost'
 					className='relative p-2 rounded-xl transition-colors'
 				>
-					<Bell className='w-5 h-5 text-gray-600' />
-					<span className='absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full'></span>
+					<Bell className='size-5 text-muted-foreground' />
+					<span className='absolute top-1 right-1 size-2 bg-green-500 rounded-full'></span>
 				</Button>
-				<Button className=''>
-					<Plus className='w-5 h-5' />
-					New Post
-				</Button>
+				<Link
+					href='/admin?query=create-post'
+					className={`flex items-center gap-2 transition-colors group rounded ${buttonVariants(
+						{ variant: 'default' }
+					)}`}
+				>
+					<Plus className='size-5' />
+					<span className='group-hover:ml-2 transition-all'>New Post</span>
+				</Link>
 			</div>
 		</div>
 	);

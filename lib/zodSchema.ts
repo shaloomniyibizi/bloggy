@@ -41,5 +41,18 @@ export const registerSchema = z.object({
 		}),
 });
 
+export const blogPostSchema = z.object({
+	title: z.string().min(1, { message: 'Title is required' }),
+	image: z.string().url({ message: 'Image must be a valid URL' }),
+	description: z.string().min(1, { message: 'Description is required' }),
+	category: z.string().min(1, { message: 'Category is required' }),
+	status: z.enum(['Published', 'Draft', 'Archived'], {
+		errorMap: () => ({ message: 'Please select a valid status' }),
+	}),
+	readTime: z.string().optional(),
+	views: z.string().optional(),
+});
+
 export type LoginSchemaType = z.infer<typeof loginSchema>;
 export type RegisterSchemaType = z.infer<typeof registerSchema>;
+export type BlogPostSchemaType = z.infer<typeof blogPostSchema>;

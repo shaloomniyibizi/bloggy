@@ -1,8 +1,8 @@
 'use client';
 
-import { BlogCard } from '@/components/web/blogCard';
 import { useQuery } from 'convex/react';
 import { api } from '@/convex/_generated/api';
+import { BlogCard } from '@/components/web/blog-card';
 
 export default function BlogPage() {
 	const blogs = useQuery(api.blogs.getAllBlogs);
