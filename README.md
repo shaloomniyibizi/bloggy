@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bloggy
 
-## Getting Started
+A modern full-stack blogging platform built for publishing and managing posts.
 
-First, run the development server:
+## Overview
+
+Bloggy is a web application where authenticated users can create and manage their own posts while reading content published by other users.
+
+## Core functionality
+
+- User authentication
+- Create blog posts
+- View published posts
+- Edit your own posts
+- Delete your own posts
+- User-focused content management
+- Responsive modern interface
+
+## Tech stack
+
+- Next.js
+- TypeScript
+- Convex
+- Better Auth
+- Framer Motion
+- Modern React UI components
+
+## Getting started
+
+### Requirements
+
+- Node.js
+- A configured Convex project
+- Authentication/environment configuration required by the application
+
+### Installation
+
+```bash
+git clone https://github.com/shaloomniyibizi/bloggy.git
+cd bloggy
+npm install
+```
+
+Configure the required environment variables, then run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project status
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+An ongoing full-stack project focused on authentication, content management, and modern web application architecture.
 
-## Learn More
+## Author
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Shaloom NIYIBIZI**
